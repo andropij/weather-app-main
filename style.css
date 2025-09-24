@@ -10,6 +10,13 @@
     font-family: "Dm sans", "Sans Serif";
 }
 
+:root {
+    --border-bg--color: #3f3e3e;
+    --bg--color: #090038;
+    --font-color: #fff;
+    --btn-color: #205fb3; 
+}
+
 body {
     background: var(--bg--color);
     margin: 30px 60px;
@@ -34,11 +41,61 @@ header .header-menu {
     padding: 10px 20px;
 }
 
-:root {
-    --border-bg--color: #3f3e3e;
-    --bg--color: #090038;
-    --font-color: #fff; 
+/* Заголовок основнго блока */
+
+.main-header {
+    margin-top: 40px;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 50px;
 }
+
+.main-searchbar {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.main-searchbar .seacrhbar {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+}
+
+#seacrhbar {
+    background: var(--border-bg--color);
+
+    border-style: none;
+
+    width: 370px;
+}
+
+#seacrhbar::placeholder {
+    font-family: "Dm sans", "Sans Serif";
+
+    padding: 20px 0;
+
+    color: var(--font-color);
+
+    font-size: 15px;
+    font-weight: 200;
+
+}
+
+/* основной блок */
+
+
 
 /* Ютилити */
 
@@ -47,6 +104,8 @@ header .header-menu {
 
     border-radius: 10px;
 
+    padding: 10px 20px;
+
 }
 
 a {
@@ -54,10 +113,24 @@ a {
     align-items: center;
 }
 
+.btn {
+    background: var(--btn-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 15px;
+}
+
+h1 {
+    font-family: "Bricolage Grotesque";
+}
+
 /* Шрифты */
 
 .font-xxl {
     font-size: 48px;
+    font-weight: 400;
+    
 }
 
 .font-xl {
@@ -65,6 +138,6 @@ a {
 }
 
 .font-md {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 300;
 }
