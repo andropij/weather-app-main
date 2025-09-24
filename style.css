@@ -12,6 +12,7 @@
 
 :root {
     --border-bg--color: #3f3e3e;
+    --border-bg--color-light: #696969;
     --bg--color: #090038;
     --font-color: #fff;
     --btn-color: #205fb3; 
@@ -24,7 +25,8 @@ body {
 
 header  {
     display: flex;
-
+    
+    align-items: center;
     justify-content: space-between;
     
     padding: 25px;
@@ -40,6 +42,8 @@ header .header-menu {
 
     padding: 10px 20px;
 }
+
+
 
 /* Заголовок основнго блока */
 
@@ -95,6 +99,196 @@ header .header-menu {
 
 /* основной блок */
 
+.main-grid {
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    justify-self: center;
+
+    gap: 30px;
+}
+
+/* Погода выбранного города */
+
+.main-grid .main-grid--card1 .weather-card {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 70px 20px;
+
+    background-image: url(images/bg-today-large.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 15px;
+
+}
+
+.main-grid .main-grid--card1 .weather-card--text .font-xl {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.main-grid .main-grid--card1 .weather-card--text .font-md {
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.main-grid .main-grid--card1 .weather-card .weather-card--img {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+.main-grid .main-grid--card1 .weather-card .weather-card--img img{
+    height: 90px;
+}
+
+.main-grid .main-grid--card1 .weather-card .weather-card--img .font-xxl {
+    font-size: 80px;
+}
+
+
+
+/* Карточки со статусами */
+
+.main-grid .main-grid--card1 .status-cards {
+    margin-top: 30px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    gap: 15px;
+
+}
+
+.main-grid .main-grid--card1 .status-cards .status-cards--card {
+    padding: 10px;
+
+    font-weight: 200;
+
+    
+}
+
+.main-grid .main-grid--card1 .status-cards .status-cards--card h2 {
+    margin-top: 15px;
+
+    font-weight: 300;
+
+    
+}
+
+/* Карточки по дням */
+
+.main-grid .main-grid--card1 .days-cards {
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+    gap: 10px;
+    
+}
+
+.main-grid .main-grid--card1 h3 {
+    margin-top: 40px;
+
+    font-weight: 500;
+}
+
+.main-grid .main-grid--card1 .days-cards .days-cards-weather {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 7px;
+
+    margin-top: 20px;
+}
+
+.main-grid .main-grid--card1 .days-cards .days-cards-weather h4 {
+    font-weight: 500;
+}
+
+.main-grid .main-grid--card1 .days-cards .days-cards-weather .weater-stats {
+    display: flex;
+
+    justify-content: space-between;
+    align-content: center;
+
+    gap: 30px;
+    
+}
+
+/* Вторая карточка */
+
+.main-grid .main-grid--card2 {
+    padding: 25px 20px;
+}
+
+/* Хедер второй карточки */
+
+.main-grid .main-grid--card2 .card2-header {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+    
+
+}
+
+.main-grid .main-grid--card2 .card2-header .menu {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 5px 20px;
+
+}
+
+/* тело второй карточки */
+
+.main-grid .main-grid--card2 .hour-weather {
+    margin-top: 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+.main-grid .main-grid--card2 .hour-weather .hour-weather--card {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-grid .main-grid--card2 .hour-weather .hour-weather--card .card-hour {
+     display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 5px;
+}
+
 
 
 /* Ютилити */
@@ -106,6 +300,14 @@ header .header-menu {
 
     padding: 10px 20px;
 
+}
+
+.border-box--light {
+    background: var(--border-bg--color-light);
+
+    border-radius: 10px;
+
+    padding: 10px 20px;
 }
 
 a {
@@ -121,6 +323,18 @@ a {
     font-size: 15px;
 }
 
+img {
+    height: 68px;
+}
+
+.header-img {
+    height: auto
+}
+
+.weather-img--small {
+    height:28px;
+}
+
 h1 {
     font-family: "Bricolage Grotesque";
 }
@@ -129,15 +343,16 @@ h1 {
 
 .font-xxl {
     font-size: 48px;
-    font-weight: 400;
+    font-weight: 450;
     
 }
 
 .font-xl {
-    font-size: 24px;
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .font-md {
     font-size: 12px;
-    font-weight: 300;
+    font-weight: 200;
 }

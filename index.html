@@ -26,9 +26,13 @@
         <a href="#"><img src="images/logo.svg" alt="" /></a>
       </div>
       <div class="header-menu border-box">
-        <a href="#"><img src="images/icon-units.svg" alt="" /></a>
+        <a href="#"
+          ><img src="images/icon-units.svg" alt="" class="header-img"
+        /></a>
         <p class="font-md">Units</p>
-        <a href="#"><img src="images/icon-dropdown.svg" alt="" /></a>
+        <a href="#"
+          ><img src="images/icon-dropdown.svg" alt="" class="header-img"
+        /></a>
       </div>
     </header>
 
@@ -41,7 +45,7 @@
         <h1 class="font-xxl">How's the sky looking today?</h1>
         <div class="main-searchbar">
           <seacrhbar class="border-box seacrhbar">
-            <img src="images/icon-search.svg" alt="" />
+            <img src="images/icon-search.svg" alt="" class="header-img" />
             <input
               type="search"
               name="seacrhbar"
@@ -54,6 +58,183 @@
       </div>
 
       <!-- карточки основнго блока -->
+
+      <div class="main-grid">
+        <!-- Первая карточка основнго блока -->
+
+        <!-- Карточка с погодой выбранного города -->
+
+        <div class="main-grid--card1">
+          <div class="weather-card">
+            <div class="weather-card--text">
+              <h2 class="font-xl">Berlin, Germany</h2>
+              <p class="font-md">Tuesday, Aug, 2025</p>
+            </div>
+            <div class="weather-card--img">
+              <img src="images/icon-sunny.webp" alt="" />
+              <h2 class="font-xxl"><i>68°</i></h2>
+            </div>
+          </div>
+
+          <!-- Карточки со статусами -->
+          <div class="status-cards">
+            <div class="status-cards--card border-box">
+              <p class="text-md">Feels Like</p>
+              <h2 class="text-xxl">64°</h2>
+            </div>
+            <div class="status-cards--card border-box">
+              <p class="text-md">Humidity</p>
+              <h2 class="text-xxl">46%</h2>
+            </div>
+            <div class="status-cards--card border-box">
+              <p class="text-md">Wind</p>
+              <h2 class="text-xxl">9 mph</h2>
+            </div>
+            <div class="status-cards--card border-box">
+              <p class="text-md">Preceptitation</p>
+              <h2 class="text-xxl">0 in</h2>
+            </div>
+          </div>
+
+          <!-- Карточки с погодой на неделю -->
+          <h3 class="font-xl">Daily forecast</h3>
+          <div class="days-cards">
+            <div class="days-cards-weather border-box">
+              <h4 class="font-md">Tue</h4>
+              <img src="images/icon-rain.webp" alt="" />
+              <div class="weater-stats">
+                <p class="font-md">68°</p>
+                <p class="font-md">57°</p>
+              </div>
+            </div>
+            <div class="days-cards-weather border-box">
+              <h4 class="font-md">Wed</h4>
+              <img src="images/icon-drizzle.webp" alt="" />
+              <div class="weater-stats">
+                <p class="font-md">70°</p>
+                <p class="font-md">59°</p>
+              </div>
+            </div>
+            <div class="days-cards-weather border-box">
+              <h4 class="font-md">Thu</h4>
+              <img src="images/icon-sunny.webp" alt="" />
+              <div class="weater-stats">
+                <p class="font-md">77°</p>
+                <p class="font-md">57°</p>
+              </div>
+            </div>
+            <div class="days-cards-weather border-box">
+              <h4 class="font-md">Fri</h4>
+              <img src="images/icon-partly-cloudy.webp" alt="" />
+              <div class="weater-stats">
+                <p class="font-md">77°</p>
+                <p class="font-md">55°</p>
+              </div>
+            </div>
+            <div class="days-cards-weather border-box">
+              <h4 class="font-md">Sat</h4>
+              <img src="images/icon-storm.webp" alt="" />
+              <div class="weater-stats">
+                <p class="font-md">70°</p>
+                <p class="font-md">59°</p>
+              </div>
+            </div>
+            <div class="days-cards-weather border-box">
+              <h4 class="font-md">Sun</h4>
+              <img src="images/icon-snow.webp" alt="" />
+              <div class="weater-stats">
+                <p class="font-md">77°</p>
+                <p class="font-md">61°</p>
+              </div>
+            </div>
+            <div class="days-cards-weather border-box">
+              <h4 class="font-md">Mon</h4>
+              <img src="images/icon-fog.webp" alt="" />
+              <div class="weater-stats">
+                <p class="font-md">75°</p>
+                <p class="font-md">59°</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Вторая карточка основнго блока -->
+        <div class="main-grid--card2 border-box">
+          <div class="card2-header">
+            <h2 class="font-xl">Hourly forecast</h2>
+            <div class="menu border-box--light">
+              <p class="font-md">Tuesday</p>
+              <img src="images/icon-dropdown.svg" alt="" class="header-img" />
+            </div>
+          </div>
+
+          <div class="hour-weather">
+            <div class="hour-weather--card border-box--light">
+              <div class="card-hour">
+                <img src="images/icon-overcast.webp" alt="" class="weather-img--small" />
+                <h2 class="font-xl">3 PM</h2>
+              </div>
+              <p class="font-md">68°</p>
+            </div>
+
+            <div class="hour-weather--card border-box--light">
+              <div class="card-hour">
+                <img src="images/icon-partly-cloudy.webp" alt="" class="weather-img--small" />
+                <h2 class="font-xl">4 PM</h2>
+              </div>
+              <p class="font-md">68°</p>
+            </div>
+
+            <div class="hour-weather--card border-box--light">
+              <div class="card-hour">
+                <img src="images/icon-sunny.webp" alt="" class="weather-img--small" />
+                <h2 class="font-xl">5 PM</h2>
+              </div>
+              <p class="font-md">68°</p>
+            </div>
+
+            <div class="hour-weather--card border-box--light">
+              <div class="card-hour">
+                <img src="images/icon-overcast.webp" alt="" class="weather-img--small" />
+                <h2 class="font-xl">6 PM</h2>
+              </div>
+              <p class="font-md">66°</p>
+            </div>
+
+            <div class="hour-weather--card border-box--light">
+              <div class="card-hour">
+                <img src="images/icon-snow.webp" alt="" class="weather-img--small" />
+                <h2 class="font-xl">7 PM</h2>
+              </div>
+              <p class="font-md">66°</p>
+            </div>
+
+            <div class="hour-weather--card border-box--light">
+              <div class="card-hour">
+                <img src="images/icon-fog.webp" alt="" class="weather-img--small" />
+                <h2 class="font-xl">8 PM</h2>
+              </div>
+              <p class="font-md">64°</p>
+            </div>
+
+            <div class="hour-weather--card border-box--light">
+              <div class="card-hour">
+                <img src="images/icon-snow.webp" alt="" class="weather-img--small" />
+                <h2 class="font-xl">9 PM</h2>
+              </div>
+              <p class="font-md">63°</p>
+            </div>
+
+            <div class="hour-weather--card border-box--light">
+              <div class="card-hour">
+                <img src="images/icon-overcast.webp" alt="" class="weather-img--small" />
+                <h2 class="font-xl">10 PM</h2>
+              </div>
+              <p class="font-md">63°</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
