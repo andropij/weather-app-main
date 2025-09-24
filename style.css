@@ -404,6 +404,56 @@ h1 {
     }
 
     .main-grid .main-grid--card1 .weather-card {
+
+    }
+
+    body {
+        margin: 15px;
+        justify-content: center;
+    }
+
+    .logo img{
+        width: 60%;
+        height: 30%;
+    }
+
+    header .header-menu {
+        padding: 5px 10px;
+    }
+
+    .main-header {
+        flex-direction: column;
+    }
+
+    .main-header .main-searchbar {
+        flex-direction: column;
+        min-width: 300px;
+    }
+
+    .main-grid .main-grid--card1 .status-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .main-grid .main-grid--card1 .days-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+
+}
+
+@media (max-width:380px) {
+    .main-grid {
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+    .main-grid .main-grid--card1 .weather-card {
         background: url(images/bg-today-small.svg);
 
         flex-direction: column;
