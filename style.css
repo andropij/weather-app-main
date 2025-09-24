@@ -1,0 +1,70 @@
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    color: var(--font-color) ;
+
+    font-family: "Dm sans", "Sans Serif";
+}
+
+body {
+    background: var(--bg--color);
+    margin: 30px 60px;
+}
+
+header  {
+    display: flex;
+
+    justify-content: space-between;
+    
+    padding: 25px;
+}
+
+header .header-menu {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+
+    gap: 10px;
+
+    padding: 10px 20px;
+}
+
+:root {
+    --border-bg--color: #3f3e3e;
+    --bg--color: #090038;
+    --font-color: #fff; 
+}
+
+/* Ютилити */
+
+.border-box {
+    background: var(--border-bg--color);
+
+    border-radius: 10px;
+
+}
+
+a {
+    display: flex;
+    align-items: center;
+}
+
+/* Шрифты */
+
+.font-xxl {
+    font-size: 48px;
+}
+
+.font-xl {
+    font-size: 24px;
+}
+
+.font-md {
+    font-size: 16px;
+    font-weight: 300;
+}
